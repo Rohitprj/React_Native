@@ -1,0 +1,144 @@
+🧱 1. Core Fundamentals (Start Here)
+
+These are the absolute basics.
+
+✅ display: flex
+Default in React Native (you don’t need to set it)
+Every View behaves like a flex container
+✅ flexDirection
+
+Defines main axis:
+
+column (default in React Native ⚠️)
+row
+column-reverse
+row-reverse
+
+👉 Important: React Native default = column, unlike web (row)
+
+📐 2. Main Axis Alignment
+✅ justifyContent
+
+Controls alignment along main axis
+
+Values:
+
+flex-start
+flex-end
+center
+space-between
+space-around
+space-evenly
+📏 3. Cross Axis Alignment
+✅ alignItems
+
+Controls alignment of children on cross axis
+
+Values:
+
+flex-start
+flex-end
+center
+stretch (default)
+baseline
+🎯 4. Individual Alignment
+✅ alignSelf
+
+Overrides alignItems for a single child
+
+📦 5. Flex Sizing
+✅ flex
+
+Shorthand for:
+
+flexGrow
+flexShrink
+flexBasis
+
+Common usage:
+
+flex: 1
+✅ flexGrow
+Defines how much a component grows
+✅ flexShrink
+Defines how much it shrinks
+✅ flexBasis
+Initial size before growing/shrinking
+📊 6. Space Distribution
+✅ Understanding how space is calculated
+Available space = container size - fixed elements
+Flex distributes remaining space
+🔄 7. Wrapping
+✅ flexWrap
+nowrap (default)
+wrap
+wrap-reverse
+
+⚠️ Works mainly with row
+
+🧭 8. Align Content (Advanced)
+✅ alignContent
+Works when items wrap into multiple lines
+Controls spacing between rows
+📐 9. Gap (Newer Support)
+✅ gap, rowGap, columnGap
+Adds spacing between items (cleaner than margins)
+📍 10. Positioning + Flex
+✅ position
+relative (default)
+absolute
+✅ Combining Flex + Absolute
+Overlay elements
+Floating buttons
+📱 11. Layout Behavior in React Native
+Key differences from web:
+Default flexDirection: column
+No margin: auto
+
+Uses numbers instead of px:
+
+margin: 10
+No float, no inline-block
+🧪 12. Real Layout Patterns (Very Important)
+
+Teach these practical patterns:
+
+📌 Centering
+justifyContent: 'center',
+alignItems: 'center'
+📌 Row with space between
+flexDirection: 'row',
+justifyContent: 'space-between'
+📌 Equal columns
+flex: 1
+📌 Sidebar layout
+Parent: row
+Sidebar: fixed width
+Content: flex: 1
+⚡ 13. Responsive Design with Flex
+Use % + flex
+Avoid fixed widths
+Combine with:
+Dimensions
+useWindowDimensions
+🧠 14. Debugging Flexbox
+
+Teach how to:
+
+Use borders:
+borderWidth: 1
+Visualize layout
+Understand axis direction mentally
+🚀 15. Performance & Best Practices
+Avoid deep nesting
+Use flex instead of fixed sizes
+Keep layout predictable
+🎓 Suggested Teaching Order
+flexDirection
+justifyContent
+alignItems
+flex (grow/shrink)
+real layouts
+wrapping
+advanced alignment
+responsive design
