@@ -11,7 +11,15 @@ export default function Index() {
       }}
     >
       <Link href="/home">
-        <Text style={{ fontSize: 20 }}>Go to Home</Text>
+        <Text
+          style={{
+            fontSize: 20,
+            textDecorationLine: "underline",
+            color: "blue",
+          }}
+        >
+          Go to Home
+        </Text>
       </Link>
     </View>
   );
